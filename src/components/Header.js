@@ -18,8 +18,10 @@ const Header = () => {
                    <p>Solar Panel</p>
                </div>
                <div className="header_menu">
+                   <div className="account">
                    <p>Shop</p>
                    <p>Account</p>
+                   </div>
                    <p>Menu</p>
                </div>
             </div> 
