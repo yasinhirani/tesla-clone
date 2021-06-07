@@ -38,7 +38,7 @@ export default Section;
 
 const Container = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: ${props =>`url("${process.env.PUBLIC_URL}/images/${props.bgImg}")`};
     background-position: center;
     background-size: cover;
