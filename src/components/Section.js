@@ -3,6 +3,7 @@ import Header from './Header';
 // import main_img from '../images/model-s.jpg';
 import './section.css';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const Section = ({modelName, desc, btnLeft, btnRight, img}) => {
     return (
@@ -11,16 +12,20 @@ const Section = ({modelName, desc, btnLeft, btnRight, img}) => {
                 <Header />
                 <div className="main_info">
                     <div className="top_info">
+                    <Fade bottom>
                     <h1>{modelName}</h1>
                     <p>{desc}</p>
+                    </Fade>
                     </div>
                     <div className="down_buttons">
                         <div className="buttons">
+                        <Fade left>
                         <p>{btnLeft}</p>
-                        {btnRight && <p id="existing">{btnRight}</p>}
+                        </Fade>
+                        {btnRight && <Fade right><p id="existing">{btnRight}</p></Fade>}
                         </div>
                         <div className="down_arrow">
-                            <img className="down_img" src={`${process.env.PUBLIC_URL + '/images/down-arrow.svg'}`} alt=""/>
+                        <Fade top><img className="down_img" src={`${process.env.PUBLIC_URL + '/images/down-arrow.svg'}`} alt=""/></Fade>
                         </div>
                     </div>
                 </div>
