@@ -54,7 +54,7 @@
     background-color: rgba(255, 255, 255,0.60);
     color: black;
 }
-.down_img{
+.down_arrow{
     width: 40px;
     animation: updown 2s infinite;
 }

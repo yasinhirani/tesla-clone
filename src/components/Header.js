@@ -22,7 +22,9 @@ const Header = () => {
                    <p>Shop</p>
                    <p>Account</p>
                    </div>
+                   <div className="menu">
                    <p>Menu</p>
+                   </div>
                </div>
             </div> 
         </>
